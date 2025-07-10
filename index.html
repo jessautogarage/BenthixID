@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marine Life Explorer App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+  </style>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans h-screen">
+
+  <div class="flex flex-col lg:flex-row h-auto lg:h-screen w-full overflow-y-auto lg:overflow-hidden bg-gradient-to-tr from-blue-100 via-white to-cyan-100">
+    
+    <!-- Left - Responsive Full Height Image -->
+    <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen flex items-end justify-center">
+      <img 
+        src="assets/img/jessan.png" 
+        alt="App Presenter" 
+        class="h-full w-auto max-w-full object-contain lg:object-bottom" />
+    </div>
+
+    <!-- Right - App Promo -->
+    <div class="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 py-6 lg:-ml-[120px]">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-6 leading-tight text-center lg:text-left">
+        Discover & Study <span class="text-cyan-600">Marine Life</span> Like Never Before
+      </h1>
+
+      <ul class="space-y-4 mb-10 text-left max-w-md mx-auto lg:mx-0">
+        <li class="flex items-start gap-3">
+          <span class="text-cyan-500 text-lg mt-1">✔</span>
+          <div>
+            <p class="font-bold">Track Ocean Species</p>
+            <p class="text-sm text-gray-600">Log fish, corals, and mollusks in real-time from your dives.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-cyan-500 text-lg mt-1">✔</span>
+          <div>
+            <p class="font-bold">Underwater Mapping</p>
+            <p class="text-sm text-gray-600">Record dive locations, reef zones, and water health data.</p>
+          </div>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-cyan-500 text-lg mt-1">✔</span>
+          <div>
+            <p class="font-bold">Collaborate with Researchers</p>
+            <p class="text-sm text-gray-600">Sync your observations with marine biologists and ocean projects.</p>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-md mx-auto lg:mx-0">
+        <div class="bg-blue-100 text-center p-6 rounded-2xl shadow-md">
+          <p class="text-2xl font-bold text-blue-700">18K</p>
+          <p class="text-sm text-gray-600">Researchers</p>
+        </div>
+        <div class="bg-cyan-100 text-center p-6 rounded-2xl shadow-md">
+          <p class="text-2xl font-bold text-cyan-700">42</p>
+          <p class="text-sm text-gray-600">Marine Regions</p>
+        </div>
+        <div class="bg-emerald-100 text-center p-6 rounded-2xl shadow-md">
+          <p class="text-2xl font-bold text-emerald-700">1200+</p>
+          <p class="text-sm text-gray-600">Species Logged</p>
+        </div>
+      </div>
+
+      <!-- Download Buttons -->
+      <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+        <a href="#" class="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+          <span>Download on iOS</span>
+        </a>
+        <a href="#" class="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+          <span>Download on Android</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
