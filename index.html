@@ -11,11 +11,11 @@
     }
   </style>
 </head>
-<body class="bg-blue-50 text-gray-800 font-sans h-screen">
+<body class="bg-blue-50 text-gray-800 font-sans min-h-screen">
 
-  <div class="flex flex-col lg:flex-row h-auto lg:h-screen w-full overflow-y-auto lg:overflow-hidden bg-gradient-to-tr from-blue-100 via-white to-cyan-100">
+  <div class="flex flex-col lg:flex-row w-full overflow-y-auto bg-gradient-to-tr from-blue-100 via-white to-cyan-100">
     
-    <!-- Left - Responsive Full Height Image -->
+    <!-- Left: Image -->
     <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen flex items-end justify-center">
       <img 
         src="assets/img/jessan.png" 
@@ -23,60 +23,83 @@
         class="h-full w-auto max-w-full object-contain lg:object-bottom" />
     </div>
 
-    <!-- Right - App Promo -->
-    <div class="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-16 py-6 lg:-ml-[120px]">
+    <!-- Right: Content -->
+    <div class="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-8 lg:px-6 lg:pl-0 py-10 lg:py-16">
+
+
+      
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-blue-900 mb-6 leading-tight text-center lg:text-left">
-        Discover & Study <span class="text-cyan-600">Marine Life</span> Like Never Before
+        Explore <span class="text-cyan-600">Benthic Macrofauna</span> with BenthixID
       </h1>
 
-      <ul class="space-y-4 mb-10 text-left max-w-md mx-auto lg:mx-0">
-        <li class="flex items-start gap-3">
-          <span class="text-cyan-500 text-lg mt-1">✔</span>
-          <div>
-            <p class="font-bold">Track Ocean Species</p>
-            <p class="text-sm text-gray-600">Log fish, corals, and mollusks in real-time from your dives.</p>
-          </div>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-cyan-500 text-lg mt-1">✔</span>
-          <div>
-            <p class="font-bold">Underwater Mapping</p>
-            <p class="text-sm text-gray-600">Record dive locations, reef zones, and water health data.</p>
-          </div>
-        </li>
-        <li class="flex items-start gap-3">
-          <span class="text-cyan-500 text-lg mt-1">✔</span>
-          <div>
-            <p class="font-bold">Collaborate with Researchers</p>
-            <p class="text-sm text-gray-600">Sync your observations with marine biologists and ocean projects.</p>
-          </div>
-        </li>
-      </ul>
+      <div class="space-y-10 text-left max-w-2xl mx-auto lg:mx-0">
+        
+        <!-- Vision -->
+        <div>
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Our Vision</h2>
+          <p class="text-gray-700 text-sm">
+            At BenthixID, we empower students, researchers, and marine enthusiasts with accessible tools to explore benthic macrofauna—key organisms in ocean health and biodiversity.
+          </p>
+        </div>
 
-      <!-- Stats -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-md mx-auto lg:mx-0">
-        <div class="bg-blue-100 text-center p-6 rounded-2xl shadow-md">
-          <p class="text-2xl font-bold text-blue-700">18K</p>
-          <p class="text-sm text-gray-600">Researchers</p>
+        <!-- Definition -->
+        <div>
+          <h2 class="text-xl font-bold text-blue-800 mb-2">What is Benthic Macrofauna?</h2>
+          <p class="text-gray-700 text-sm">
+            These are small invertebrates—like worms, mollusks, and crustaceans—living on the ocean floor. They play vital roles in nutrient cycling and sediment stability.
+          </p>
         </div>
-        <div class="bg-cyan-100 text-center p-6 rounded-2xl shadow-md">
-          <p class="text-2xl font-bold text-cyan-700">42</p>
-          <p class="text-sm text-gray-600">Marine Regions</p>
-        </div>
-        <div class="bg-emerald-100 text-center p-6 rounded-2xl shadow-md">
-          <p class="text-2xl font-bold text-emerald-700">1200+</p>
-          <p class="text-sm text-gray-600">Species Logged</p>
-        </div>
-      </div>
 
-      <!-- Download Buttons -->
-      <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-        <a href="#" class="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
-          <span>Download on iOS</span>
-        </a>
-        <a href="#" class="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
-          <span>Download on Android</span>
-        </a>
+        <!-- About -->
+        <div>
+          <h2 class="text-xl font-bold text-blue-800 mb-2">Why BenthixID?</h2>
+          <p class="text-gray-700 text-sm">
+            Created at Cebu Technological University by Jessan Despi Moradas, BenthixID modernizes marine biology education with mobile-first tools for fieldwork and research.
+          </p>
+        </div>
+
+        <!-- Features -->
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3">
+            <span class="text-cyan-500 text-lg mt-1">✔</span>
+            <div>
+              <p class="font-bold">Simplified Species ID</p>
+              <p class="text-sm text-gray-600">Use visual keys and descriptions for fast, accurate identification.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-cyan-500 text-lg mt-1">✔</span>
+            <div>
+              <p class="font-bold">Interactive Learning</p>
+              <p class="text-sm text-gray-600">Quizzes and multimedia modules for hands-on marine education.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-cyan-500 text-lg mt-1">✔</span>
+            <div>
+              <p class="font-bold">Field Research Tools</p>
+              <p class="text-sm text-gray-600">Log data, geotag locations, and annotate your findings in-app.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-3">
+            <span class="text-cyan-500 text-lg mt-1">✔</span>
+            <div>
+              <p class="font-bold">Community Collaboration</p>
+              <p class="text-sm text-gray-600">Share data with researchers and connect with marine explorers.</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Download Buttons -->
+        <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-8">
+          <a href="#" class="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+            <span>Download on iOS</span>
+          </a>
+          <a href="#" class="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+            <span>Download on Android</span>
+          </a>
+        </div>
+
       </div>
     </div>
 
