@@ -15,16 +15,27 @@
 
   <div class="flex flex-col lg:flex-row w-full overflow-y-auto bg-gradient-to-tr from-blue-100 via-white to-cyan-100">
     
-    <!-- Left: Image -->
-    <div class="w-full lg:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-screen flex items-end justify-center">
-      <img 
-        src="assets/img/jessan.png" 
-        alt="App Presenter" 
-        class="h-full w-auto max-w-full object-contain lg:object-bottom" />
+    <!-- Left: Images Inline and Close Together -->
+    <div class="w-full lg:w-1/2 flex items-center justify-center gap-2 md:gap-4 h-[400px] md:h-[500px] lg:h-screen px-4">
+      <!-- Jessan Image -->
+      <div class="flex items-center justify-center">
+        <img 
+          src="assets/img/jessan.png" 
+          alt="App Presenter" 
+          class="h-[450px] md:h-[550px] lg:h-[650px] w-auto object-contain" />
+      </div>
+      
+      <!-- BenthixID App Image -->
+      <div class="flex items-center justify-center">
+        <img 
+          src="assets/img/benthixapp.png" 
+          alt="BenthixID App" 
+          class="h-[380px] md:h-[450px] lg:h-[520px] w-auto object-contain" />
+      </div>
     </div>
 
     <!-- Right: Content -->
-    <div class="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-8 lg:px-6 lg:pl-0 py-10 lg:py-16">
+    <div class="w-full lg:w-1/2 flex flex-col justify-center px-6 sm:px-8 lg:px-6 py-10 lg:py-16">
 
 
       
@@ -92,10 +103,10 @@
 
         <!-- Download Buttons -->
         <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 mt-8">
-          <a href="#" class="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+          <a href="assets/downloads/BenthixID.ipa" download="BenthixID.ipa" class="flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
             <span>Download on iOS</span>
           </a>
-          <a href="#" class="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+          <a href="assets/downloads/BenthixID.apk" download="BenthixID.apk" class="flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
             <span>Download on Android</span>
           </a>
         </div>
